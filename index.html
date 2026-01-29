@@ -3,194 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faruq Adisa Adegboyega - Portfolio</title>
+    <title>Faruq Adegboyega - Full Stack Developer & Designer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="#" class="logo">Faruq Adisa Adegboyega</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Faruq Adegboyega</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+    </nav>
 
-    <section id="hero" class="hero-section">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-animate="fade-up">Hello, I'm</p>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="0.2">
+                    <span class="name-highlight">Faruq</span> Adegboyega
+                </h1>
+                <div class="hero-titles" data-animate="fade-up" data-delay="0.4">
+                    <p class="typing-text">
+                        <span class="typed-words"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                </div>
+                <p class="hero-description" data-animate="fade-up" data-delay="0.6">
+                    Full Stack Developer crafting elegant web solutions with PHP, JavaScript, and modern frameworks. 
+                    Transforming ideas into exceptional digital experiences.
+                </p>
+                <div class="hero-cta" data-animate="fade-up" data-delay="0.8">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-animate="fade-left">
+                <div class="image-wrapper">
+                    <img src="images/portfolio image.jpg" alt="Faruq Adegboyega">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <!-- <span>Scroll</span> -->
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="hero-content">
-                <p class="intro-text fade-in-up">Hello, I'm</p>
-                <h1 id="typed-name"></h1> 
-                <p class="tagline fade-in-up">A Passionate Web Developer and Graphics Designer</p>
-                <a href="#projects" class="btn fade-in-up">View My Work</a>
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-animate="fade-right">
+                    <p class="lead-text">
+                        Passionate web developer with a proven track record of building real-world applications 
+                        that solve genuine problems and create impact.
+                    </p>
+                    <p>
+                        With strong expertise in PHP, Tailwind CSS, and JavaScript, I specialize in creating 
+                        full-stack web applications from concept to deployment. My experience includes developing 
+                        complete management systems for educational institutions, crime reporting platforms, 
+                        and recruitment portals.
+                    </p>
+                    <!-- <p>
+                        I graduated with First Class Honors (GPA: 3.63) in Computer Science from the Federal 
+                        College of Animal Health and Production Technology, Ibadan. I'm committed to continuous 
+                        learning and staying current with the latest web technologies.
+                    </p> -->
+                    
+                    <div class="about-highlights">
+                        <!-- <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>First Class Graduate</h4>
+                                <p>ND Computer Science - GPA: 3.63</p>
+                            </div>
+                        </div> -->
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>10+ Projects</h4>
+                                <p>Event MS, Hostel MS, Crime Report & More</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Full Stack Developer</h4>
+                                <p>PHP, JavaScript, Tailwind CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
- <!-- About & Skills Section -->
-  <section class="py-16" id="about">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-10 text-center animate-on-scroll" data-animation="fade-in-up">About Me & Skills</h2>
-      <div class="grid md:grid-cols-2 gap-12">
-        <div class="animate-on-scroll" data-animation="fade-in-up">
-            <div class="mb-6 flex justify-center">
-                <img src="images/portfolio image.jpg" alt="Faruq Adisa Adegboyega Profile Picture" class="w-32 h-32 rounded-full object-cover shadow-lg border-4 border-white animate-on-scroll" data-animation="zoom-in">
-            </div>
-            <p class="text-lg mb-4">Motivated web developer with strong foundational skills in PHP and Tailwind CSS. Passionate about building real-world applications and eager to deepen knowledge and contribute to impactful tech solutions.</p>
-            <div class="mt-6">
-              <h3 class="text-xl font-semibold mb-2">Education</h3>
-              <p class="font-medium">National Diploma (ND) in Computer Science</p>
-              <p>Federal College of Animal Health and Production Technology, Ibadan</p>
-              <p>2023 | GPA: 3.63 (First Class)</p>
-            </div>
-        </div>
-        <div class="animate-on-scroll" data-animation="fade-in-up" data-animation-delay="0.2s">
-          <h3 class="text-xl font-semibold mb-4">Technical Proficiency</h3>
-          <div class="space-y-4">
-            <div>
-              <p class="mb-1 font-medium">PHP</p>
-              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
-                <div class="bg-blue-600 h-full w-full"></div>
-              </div>
-            </div>
-            <div>
-              <p class="mb-1 font-medium">Tailwind CSS</p>
-              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
-                <div class="bg-blue-600 h-full w-full"></div>
-              </div>
-            </div>
-            <div>
-              <p class="mb-1 font-medium">JavaScript</p>
-              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
-                <div class="bg-blue-600 h-full w-full"></div>
-              </div>
-            </div>
-            <div>
-              <p class="mb-1 font-medium">HTML/CSS</p>
-              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
-                <div class="bg-blue-600 h-full w-full"></div>
-              </div>
-            </div>
-            <div>
-              <p class="mb-1 font-medium">Git / GitHub</p>
-              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
-                <div class="bg-blue-600 h-full w-full"></div>
-              </div>
-            </div>
-            <div>
-              <p class="mb-1 font-medium">Figma</p>
-              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
-                <div class="bg-blue-600 h-full w-full"></div>
-              </div>
-            </div>
-            <div>
-              <p class="mb-1 font-medium">Pixellab</p>
-              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
-                <div class="bg-blue-600 h-full w-full"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <section id="projects" class="projects-section">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>My Projects</h2>
-
-            <div class="project-item">
-                <h3>Police-recruitment-portal</h3>
-                <p class="project-description">A digital platform for Nigerian citizens to report crimes, track report status, and receive feedback. Built from scratch using PHP, Tailwind CSS, and JavaScript.</p>
-                <div class="project-images">
-                    <a href="https://github.com/Safari-jnr/Police-recruitment-portal">
-                        <img src="images/police1.PNG" alt="Screenshot 1 of Police Police-recruitment-portal">
-                    </a>
-                    <a href="https://github.com/Safari-jnr/Police-recruitment-portal">
-                        <img src="images/police2.PNG" alt="Screenshot 2 of Police-recruitment-portal">
-                    </a>
-                    <a href="https://github.com/Safari-jnr/Police-recruitment-portal">
-                        <img src="images/police3.PNG" alt="Screenshot 3 of Police-recruitment-portal">
-                    </a>
-                </div>
-                <a href="https://github.com/Safari-jnr/Police-recruitment-portal" class="btn btn-project" target="_blank">View on GitHub</a>
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A showcase of real-world applications I've built, from management systems to live web platforms
+                </p>
             </div>
 
-            <div class="project-item">
-                <h3>Online Crime Report</h3>
-                <p class="project-description">A complete online recruitment system for the Nigerian Police Force, enabling applicants to register, log in, and track application status. Built with PHP, Tailwind CSS, and JavaScript.</p>
-                <div class="project-images">
-                    <a href="https://github.com/Safari-jnr/CrimeReport">
-                        <img src="images/crime1.PNG" alt="Screenshot 1 of CrimeReport">
-                    </a>
-                    <a href="https://github.com/Safari-jnr/CrimeReport">
-                        <img src="images/crime2.PNG" alt="Screenshot 2 of CrimeReport">
-                    </a>
-                    <a href="https://github.com/Safari-jnr/CrimeReport">
-                        <img src="images/crime3.PNG" alt="Screenshot 3 of CrimeReport">
-                    </a>
+            <div class="projects-grid">
+                <!-- Project 1: Practice Web -->
+                <div class="project-card featured" data-animate="fade-up">
+                    <div class="project-image">
+                        <div class="project-images-slider">
+                            <img src="images/exam1.PNG" alt="Practice Web Screenshot 1" class="active">
+                            <img src="images/exam2.PNG" alt="Practice Web Screenshot 2">
+                            <img src="images/exam3.PNG" alt="Practice Web Screenshot 3">
+                        </div>
+                        <div class="project-badge">
+                            <i class="fas fa-globe"></i>
+                            Live Project
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                        <h3 class="project-title">Online Examination Platform</h3>
+                        <p class="project-description">
+                            A comprehensive online examination system featuring user authentication, timed assessments, 
+                            automatic grading, and real-time result tracking. Built to handle multiple concurrent users 
+                            with secure session management.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://practiceweb.zya.me/" target="_blank" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <a href="https://github.com/Safari-jnr/CrimeReport" class="btn btn-project" target="_blank">View on GitHub</a>
-            </div>
 
+                <!-- Project 2: Chat Application -->
+                <div class="project-card featured" data-animate="fade-up" data-delay="0.1">
+                    <div class="project-image">
+                        <div class="project-images-slider">
+                            <img src="images/chatnow1.PNG" alt="Chat Now Screenshot 1" class="active">
+                            <img src="images/chatnow2.PNG" alt="Chat Now Screenshot 2">
+                            <img src="images/chatnow3.PNG" alt="Chat Now Screenshot 3">
+                        </div>
+                        <div class="project-badge">
+                            <i class="fas fa-globe"></i>
+                            Live Project
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <!-- <span class="tag">WebSocket</span> -->
+                            <span class="tag">MySQL</span>
+                            <span class="tag">AJAX</span>
+                        </div>
+                        <h3 class="project-title">Real-Time Chat Application</h3>
+                        <p class="project-description">
+                            A modern real-time messaging platform with user authentication, private messaging, 
+                            group chats, and online status indicators. Features emoji support and responsive 
+                            design for seamless communication across devices.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://chatnow.iceiy.com/" target="_blank" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Police Recruitment Portal -->
+                <div class="project-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="project-image">
+                        <div class="project-images-slider">
+                            <img src="images/police1.PNG" alt="Police Recruitment Screenshot 1" class="active">
+                            <img src="images/police2.PNG" alt="Police Recruitment Screenshot 2">
+                            <img src="images/police3.PNG" alt="Police Recruitment Screenshot 3">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                        <h3 class="project-title">Police Recruitment Portal</h3>
+                        <p class="project-description">
+                            Complete online recruitment system for the Nigerian Police Force, enabling applicants 
+                            to register, submit applications, upload documents, and track their application status 
+                            through a user-friendly dashboard.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Safari-jnr/Police-recruitment-portal" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Crime Report System -->
+                <div class="project-card" data-animate="fade-up" data-delay="0.3">
+                    <div class="project-image">
+                        <div class="project-images-slider">
+                            <img src="images/crime1.PNG" alt="Crime Report Screenshot 1" class="active">
+                            <img src="images/crime2.PNG" alt="Crime Report Screenshot 2">
+                            <img src="images/crime3.PNG" alt="Crime Report Screenshot 3">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Online Crime Reporting System</h3>
+                        <p class="project-description">
+                            Digital platform for Nigerian citizens to report crimes anonymously, track report status, 
+                            receive updates, and communicate with law enforcement. Features secure authentication 
+                            and real-time notifications.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Safari-jnr/CrimeReport" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Projects Card -->
+                <div class="project-card more-projects" data-animate="fade-up" data-delay="0.4">
+                    <div class="more-projects-content">
+                        <div class="more-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <h3>More Projects</h3>
+                        <p>
+                            I've built several other management systems including Event Management System, 
+                            Hostel Management System, and various educational platforms for students.
+                        </p>
+                        <ul class="more-list">
+                            <li><i class="fas fa-check"></i> Event Management System</li>
+                            <li><i class="fas fa-check"></i> Hostel Management System</li>
+                            <li><i class="fas fa-check"></i> Student Portal Systems</li>
+                            <li><i class="fas fa-check"></i> E-commerce Platforms</li>
+                        </ul>
+                        <a href="#contact" class="btn-text">
+                            Contact me to see more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="py-16 bg-gray-100" id="contact">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <h2 class="text-2xl font-bold mb-4">Get In Touch</h2>
-      <p class="text-lg mb-6">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-      <div class="space-y-2">
-        <p>📞 <strong>Phone:</strong> <a href="tel:+2349023527870" class="text-blue-600 hover:underline">09023527870</a></p>
-        <p>📧 <strong>Email:</strong> <a href="mailto:oluwasafari@proton.me" class="text-blue-600 hover:underline">oluwasafari@proton.me</a></p>
-        <p>📍 <strong>Location:</strong> Ibadan, Nigeria</p>
-        <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/adegboyega-faruq-18a721365" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/adegboyega-faruq-18a721365</a></p>
-        <p>💻 <strong>GitHub:</strong> <a href="https://github.com/Safari-jnr" target="_blank" class="text-blue-600 hover:underline">github.com/Safari-jnr</a></p>
-      </div>
-    </div>
-  </section>
-
-    <footer>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Faruq Adisa Adegboyega. All rights reserved.</p>
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category" data-animate="fade-up">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>PHP</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>MySQL</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>RESTful APIs</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate="fade-up" data-delay="0.1">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>HTML/CSS</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Tailwind CSS</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate="fade-up" data-delay="0.2">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Git / GitHub</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Figma</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Pixellab</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    I'm always open to new opportunities and collaborations. Let's build something amazing together!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:oluwasafari@proton.me">oluwasafari@proton.me</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+2349023527870">+234 902 352 7870</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Ibadan, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social" data-animate="fade-left">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Safari-jnr" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/adegboyega-faruq-18a721365" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="availability">
+                        <div class="status-indicator"></div>
+                        <p>Available for freelance projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear"></span> Faruq Adegboyega. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with <i class="fas fa-heart"></i> and code</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Dynamically update the current year in the footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // JavaScript for Typing Effect
-        const typedNameElement = document.getElementById('typed-name');
-        const nameToType = "Adegboyega Faruk Adisa";
-        let charIndex = 0;
-        const typingSpeed = 100; // milliseconds per character
-
-        function typeWriter() {
-            if (charIndex < nameToType.length) {
-                typedNameElement.textContent += nameToType.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeWriter, typingSpeed);
-            } else {
-                // Add the 'lean' class after typing is complete
-                typedNameElement.classList.add('lean');
-                // You can add more animations or effects here after typing
-            }
-        }
-
-        // Start typing after a short delay for hero section to appear
-        window.onload = function() {
-            setTimeout(typeWriter, 500); // Start typing after 0.5 seconds
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
