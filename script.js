@@ -3,7 +3,7 @@
 // ===================================
 const words = [
     "Full Stack Developer",
-    "Web Developer $ Designer",
+    "Web Developer & Designer",
     "PHP Expert",
     "Problem Solver"
 ];
